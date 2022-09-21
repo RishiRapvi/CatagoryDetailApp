@@ -13,6 +13,12 @@ public class CricketApp {
         this.imageResourceID = imageResourceID;
     }
 
+    public String toString(){
+        String name = " ";
+        name += "";
+        return name;
+    }
+
     public String getName() {
         return name;
     }
