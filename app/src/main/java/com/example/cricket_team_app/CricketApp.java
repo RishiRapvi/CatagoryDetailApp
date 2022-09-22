@@ -19,6 +19,11 @@ public class CricketApp {
         return name;
     }
 
+    public static final CricketApp[] myBreakfast = {
+            new CricketApp("Dwij Bhatt", "Right Arm Spin Bowler", "Fremd Viking Pride Award Winner", R.drawable.person),
+            new CricketApp("Pranav Aiyar", "Right Arm Pace Bowler", "Scholastic Bowl Captain", R.drawable.person)
+    };
+
     public String getName() {
         return name;
     }
