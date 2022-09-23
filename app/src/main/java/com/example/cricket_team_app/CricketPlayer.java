@@ -3,20 +3,20 @@ package com.example.cricket_team_app;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class CricketApp implements Parcelable {
+public class CricketPlayer implements Parcelable {
     private String name;
     private String position;
     private String desc;
     private int imageResourceID;
 
-    public CricketApp(String name, String position, String desc, int imageResourceID) {
+    public CricketPlayer(String name, String position, String desc, int imageResourceID) {
         this.name = name;
         this.position = position;
         this.desc = desc;
         this.imageResourceID = imageResourceID;
     }
 
-    public CricketApp(Parcel parcel) {
+    public CricketPlayer(Parcel parcel) {
         name = parcel.readString();
         position = parcel.readString();
         desc = parcel.readString();
@@ -30,7 +30,7 @@ public class CricketApp implements Parcelable {
         dest.writeInt(imageResourceID);
     }
 
-    public CricketApp() {
+    public CricketPlayer() {
         name = "";
         position = "";
         desc = "";
@@ -47,14 +47,14 @@ public class CricketApp implements Parcelable {
         return this.name;
     }
 
-    public static final CricketApp[] cricketApps = {
-            new CricketApp("Dwij Bhatt", "Right Arm Spin Bowler", "- Fremd Viking Pride Award Winner\n" +
+    public static final CricketPlayer[] CRICKET_PLAYERS = {
+            new CricketPlayer("Dwij Bhatt", "Right Arm Spin Bowler", "- Fremd Viking Pride Award Winner\n" +
                     "- Plum Grove Science Fair Project Winner\n" +
                     "- Best Physics Lab Partner\n" +
                     "", R.drawable.person),
-            new CricketApp("Pranav Aiyar", "Right Arm Pace Bowler", "- Scholastic Bowl Captain\n" +
+            new CricketPlayer("Pranav Aiyar", "Right Arm Pace Bowler", "- Scholastic Bowl Captain\n" +
                     "", R.drawable.person),
-            new CricketApp("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain", "- Hustlers University Prospective Student with:\n" +
+            new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain", "- Hustlers University Prospective Student with:\n" +
                     "- 1776 SAT on 1600 scale (because I love 'Merica)\n" +
                     "- 15.0 unweighted GPA\n" +
                     "- 222222.46839 weighted GPA\n" +
@@ -67,16 +67,16 @@ public class CricketApp implements Parcelable {
 
     };
 
-    public static final Parcelable.Creator<CricketApp> CREATOR = new Parcelable.Creator<CricketApp>() {
+    public static final Parcelable.Creator<CricketPlayer> CREATOR = new Parcelable.Creator<CricketPlayer>() {
 
                 @Override
-                public CricketApp createFromParcel(Parcel parcel) {
-                    return new CricketApp(parcel);
+                public CricketPlayer createFromParcel(Parcel parcel) {
+                    return new CricketPlayer(parcel);
                 }
 
                 @Override
-                public CricketApp[] newArray(int size) {
-                    return new CricketApp[0];
+                public CricketPlayer[] newArray(int size) {
+                    return new CricketPlayer[0];
                 }
     };
 

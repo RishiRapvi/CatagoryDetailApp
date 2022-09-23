@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.home:
-                Intent intent1 = new Intent(this, CricketApp.class);
+                Intent intent1 = new Intent(this, CricketPlayer.class);
                 this.startActivity(intent1);
                 return true;
             case R.id.team:
