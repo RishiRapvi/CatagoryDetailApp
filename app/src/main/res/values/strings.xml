@@ -2,8 +2,8 @@
     <string name="app_name">Cricket Team App</string>
     <string-array name="options">
         <item>About Cricket Club</item>
-        <item>Team</item>
-        <item>Info Of Player</item>
+        <item>Order Lineup</item>
+        <item>Coaches and Honorable Mentions</item>
     </string-array>
 
 </resources>
