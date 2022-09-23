@@ -63,7 +63,9 @@ public class CricketPlayer implements Parcelable {
                     "- Founder, CEO, and the entire Board of Directors of an F500 Company\n" +
                     "- Part-Time NASA astronaut and scientist\n" +
                     "- Handpicked successor to Sebastian Vettel\n" +
-                    "- Real name is Saheeb Surinder. ", R.drawable.person)
+                    "- Real name is Saheeb Surinder. ", R.drawable.person),
+            new CricketPlayer("Mr. Dvorak", "Cricket Coach", "- Best US History teacher at Fremd.\n" +
+                    "", R.drawable.person),
 
     };
 

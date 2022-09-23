@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cricket Team App</string>
+    <string name="app_name">Fremd Cricket Team App</string>
     <string-array name="options">
         <item>About Cricket Club</item>
         <item>Order Lineup</item>
