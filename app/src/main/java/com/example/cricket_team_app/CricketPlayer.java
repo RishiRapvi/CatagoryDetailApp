@@ -48,13 +48,13 @@ public class CricketPlayer implements Parcelable {
     }
 
     public static final CricketPlayer[] CRICKET_PLAYERS = {
-            new CricketPlayer("Dwij Bhatt", "Right Arm Spin Bowler", "- Fremd Viking Pride Award Winner\n" +
+            new CricketPlayer("Dwij Bhatt", "Right Arm Spin Bowler", "- Fremd Viking Monarch Award Winner\n" +
                     "- Plum Grove Science Fair Project Winner\n" +
                     "- Best Physics Lab Partner\n" +
                     "", R.drawable.person),
             new CricketPlayer("Pranav Aiyar", "Right Arm Pace Bowler", "- Scholastic Bowl Captain\n" +
                     "", R.drawable.person),
-            new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain", "- Hustlers University Prospective Student with:\n" +
+            new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain", "- \tHustlers University Prospective Student with:\n" +
                     "- 1776 SAT on 1600 scale (because I love 'Merica)\n" +
                     "- 15.0 unweighted GPA\n" +
                     "- 222222.46839 weighted GPA\n" +
@@ -64,6 +64,16 @@ public class CricketPlayer implements Parcelable {
                     "- Part-Time NASA astronaut and scientist\n" +
                     "- Handpicked successor to Sebastian Vettel\n" +
                     "- Real name is Saheeb Surinder. ", R.drawable.person),
+
+    };
+
+    public static final CricketPlayer[] CRICKET_COACHES = {
+            new CricketPlayer("Mr. Dvorak", "Cricket Coach", "- Best US History teacher at Fremd.\n" +
+                    "", R.drawable.person),
+
+    };
+
+    public static final CricketPlayer[] ORDER_LINEUP = {
             new CricketPlayer("Mr. Dvorak", "Cricket Coach", "- Best US History teacher at Fremd.\n" +
                     "", R.drawable.person),
 

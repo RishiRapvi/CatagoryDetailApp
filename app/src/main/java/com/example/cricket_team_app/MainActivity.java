@@ -1,52 +1,72 @@
 package com.example.cricket_team_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.view.menu.MenuBuilder;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
+    public static final String ARRAYLIST_VALUES = "Data to display in listView";
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    @SuppressLint("RestrictedApi")
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
 
-        if(menu instanceof MenuBuilder){
-            MenuBuilder m = (MenuBuilder) menu;
-            m.setOptionalIconsVisible(true);
-        }
-        return true;
-    }
+        // create an OnItemClickListener (notice the O is capitalized!!!)
+        // since the ListView isn't a subclass of Button, that is why we have to implement a listener
+        // and cannot use an onClick attribute like we did for Buttons, checkboxes or radio buttons
+        // we can use this method with array data defined in the strings.xml
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.home:
-                Intent intent1 = new Intent(this, CricketPlayer.class);
-                this.startActivity(intent1);
-                return true;
-            case R.id.team:
-                Intent intent2 = new Intent(this, CatagoryActivity.class);
-                this.startActivity(intent2);
-                return true;
-            case R.id.info:
-                Intent intent3 = new Intent(this, DetailActivity.class);
-                this.startActivity(intent3);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
+            public void onItemClick(AdapterView<?> listView,
+                                    View itemView, int position, long id) {
+                Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
+
+
+                // create an ArrayList of whatever type of data you are displaying in this app
+                // In this particular app, everything is centralized around the Food class.
+                ArrayList<CricketPlayer> cricketArrayList = new ArrayList<>();
+
+                // the choices for the menu on MainActivity coincide with the values in arr in strings.xml file
+                if (position == 0) {        		  	// they chose breakfast
+                    for (CricketPlayer c: CricketPlayer.CRICKET_PLAYERS) {      // add all the elements for this array to the arraylist
+                        cricketArrayList.add(c);
+                    }
+                }
+
+                else if (position == 1) {
+                    for (CricketPlayer c: CricketPlayer.CRICKET_COACHES) { 		// they chose lunch
+                        cricketArrayList.add(c);
+                    }
+                }
+
+                else if (position == 2) {
+                    for (CricketPlayer c: CricketPlayer.ORDER_LINEUP) { 		// they chose dinner
+                        cricketArrayList.add(c);
+                    }
+                }
+
+                // Send this particular ArrayList of Food data to the next activity, where we display
+                // each name of each object in the ArrayList.
+                intent.putParcelableArrayListExtra(ARRAYLIST_VALUES, cricketArrayList);
+                startActivity(intent);
+
+            }
+        };
+//Get a reference to the ListView in the XML
+        ListView listView = (ListView) findViewById(R.id.list_options);
+
+
+//Add the listener to the ListView
+// without this line of code, the listView isn’t interactive!!!!
+        listView.setOnItemClickListener(itemClickListener);
+
     }
 
 }

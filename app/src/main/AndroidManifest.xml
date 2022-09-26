@@ -17,7 +17,7 @@
             android:name=".DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".CatagoryActivity"
+            android:name=".CategoryActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
