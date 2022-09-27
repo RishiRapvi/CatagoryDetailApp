@@ -12,7 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/options"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cricketlogo" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat >

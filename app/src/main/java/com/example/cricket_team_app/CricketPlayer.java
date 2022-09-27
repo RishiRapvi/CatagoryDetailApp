@@ -48,22 +48,27 @@ public class CricketPlayer implements Parcelable {
     }
 
     public static final CricketPlayer[] CRICKET_PLAYERS = {
-            new CricketPlayer("Dwij Bhatt", "Right Arm Spin Bowler", "- Fremd Viking Monarch Award Winner\n" +
-                    "- Plum Grove Science Fair Project Winner\n" +
-                    "- Best Physics Lab Partner\n" +
-                    "", R.drawable.person),
-            new CricketPlayer("Pranav Aiyar", "Right Arm Pace Bowler", "- Scholastic Bowl Captain\n" +
-                    "", R.drawable.person),
-            new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain", "- \tHustlers University Prospective Student with:\n" +
-                    "- 1776 SAT on 1600 scale (because I love 'Merica)\n" +
-                    "- 15.0 unweighted GPA\n" +
-                    "- 222222.46839 weighted GPA\n" +
-                    "- 38 AP Classes (10s on all of the tests and in the process of forming the curriculum for AP Kindergarten Language and Culture with the homie Trevor Packer)\n" +
-                    "- 45/45 IB Diploma\n" +
-                    "- Founder, CEO, and the entire Board of Directors of an F500 Company\n" +
-                    "- Part-Time NASA astronaut and scientist\n" +
-                    "- Handpicked successor to Sebastian Vettel\n" +
-                    "- Real name is Saheeb Surinder. ", R.drawable.person),
+            new CricketPlayer("Dwij Bhatt", "Right Arm Spin Bowler", "" +
+                    "\tFremd Viking Monarch Award Winner " +
+                    "", R.drawable.dwij),
+            new CricketPlayer("Pranav Aiyar", "Right Arm Pace Bowler", "\t\tScholastic Bowl Captain " +
+                    "", R.drawable.pranav),
+            new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain",
+                    "\t\tHandpicked successor to Sebastian Vettel " , R.drawable.mpl),
+            new CricketPlayer("Rishi Singhvi", "Right Armed Batsman/Keeper",
+                    "\t\tJuice WRLD Enthusiast " , R.drawable.rishi),
+            new CricketPlayer("Sai Mihir Kovour", "Right Armed Batsman",
+                    "\t\tJustin Fields Enthusiast " , R.drawable.sai),
+            new CricketPlayer("Praneet Popuri", "Right Armed Spinner",
+                    "\t\tBest Bowler To Get It Poppin'" , R.drawable.praneet),
+            new CricketPlayer("Aashman Sharma", "Right Armed Batsman",
+                    "\t\tBest Code Sensei" , R.drawable.aashmanjpg),
+            new CricketPlayer("Richard Poruthoor", "Left Armed Batsman",
+                    "\t\tVarsity Water Polo Player" , R.drawable.richard),
+            new CricketPlayer("Devin Patel", "Right Armed Batsman",
+                    "\t\tVarsity Golfer" , R.drawable.devin),
+            new CricketPlayer("Kuldeep Debnath", "Right Armed Pacer",
+                    "\t\tI AM BETTER THAN AASHMAN" , R.drawable.kuldeep),
 
     };
 
@@ -74,8 +79,27 @@ public class CricketPlayer implements Parcelable {
     };
 
     public static final CricketPlayer[] ORDER_LINEUP = {
-            new CricketPlayer("Mr. Dvorak", "Cricket Coach", "- Best US History teacher at Fremd.\n" +
-                    "", R.drawable.person),
+            new CricketPlayer("Pranav Aiyar", "Right Arm Pace Bowler", "\t\tScholastic Bowl Captain " +
+                    "", R.drawable.pranav),
+            new CricketPlayer("Dwij Bhatt", "Right Arm Spin Bowler", "" +
+                    "\tFremd Viking Monarch Award Winner " +
+                    "", R.drawable.dwij),
+            new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain",
+                    "\t\tHandpicked successor to Sebastian Vettel " , R.drawable.mpl),
+            new CricketPlayer("Rishi Singhvi", "Right Armed Batsman/Keeper",
+                    "\t\tJuice WRLD Enthusiast " , R.drawable.rishi),
+            new CricketPlayer("Sai Mihir Kovour", "Right Armed Batsman",
+                    "\t\tJustin Fields Enthusiast " , R.drawable.sai),
+            new CricketPlayer("Praneet Popuri", "Right Armed Spinner",
+                    "\t\tBest Bowler To Get It Poppin'" , R.drawable.praneet),
+            new CricketPlayer("Aashman Sharma", "Right Armed Batsman",
+                    "\t\tBest Code Sensei" , R.drawable.aashmanjpg),
+            new CricketPlayer("Richard Poruthoor", "Left Armed Batsman",
+                    "\t\tVarsity Water Polo Player" , R.drawable.richard),
+            new CricketPlayer("Devin Patel", "Right Armed Batsman",
+                    "\t\tVarsity Golfer" , R.drawable.devin),
+            new CricketPlayer("Kuldeep Debnath", "Right Armed Pacer",
+                    "\t\tI AM BETTER THAN AASHMAN" , R.drawable.kuldeep),
 
     };
 
