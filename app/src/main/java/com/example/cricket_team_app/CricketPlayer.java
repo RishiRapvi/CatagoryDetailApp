@@ -69,12 +69,16 @@ public class CricketPlayer implements Parcelable {
                     "\t\tVarsity Golfer" , R.drawable.devin),
             new CricketPlayer("Kuldeep Debnath", "Right Armed Pacer",
                     "\t\tI AM BETTER THAN AASHMAN" , R.drawable.kuldeep),
+            new CricketPlayer("Stephen Thomas", "Right Armed Batsman",
+                    "\t\tLD Debate > Sco Bowl" , R.drawable.stephen),
 
     };
 
     public static final CricketPlayer[] CRICKET_COACHES = {
-            new CricketPlayer("Mr. Dvorak", "Cricket Coach", "- Best US History teacher at Fremd.\n" +
-                    "", R.drawable.person),
+            new CricketPlayer("Mr. Dvorak", "Cricket Coach", " Best US History teacher at Fremd!" +
+                    "", R.drawable.dvorak),
+            new CricketPlayer("Mr. Moreau", "Cricket Coach", " Table Tennis God" +
+                    "", R.drawable.moreau),
 
     };
 
@@ -86,20 +90,23 @@ public class CricketPlayer implements Parcelable {
                     "", R.drawable.dwij),
             new CricketPlayer("Matthew Port Louis", "Left Armed Batsman/Cricket Club Captain",
                     "\t\tHandpicked successor to Sebastian Vettel " , R.drawable.mpl),
+            new CricketPlayer("Praneet Popuri", "Right Armed Spinner",
+                    "\t\tBest Bowler To Get It Poppin'" , R.drawable.praneet),
+            new CricketPlayer("Stephen Thomas", "Right Armed Batsman",
+                    "\t\tLD Debate > Sco Bowl" , R.drawable.stephen),
             new CricketPlayer("Rishi Singhvi", "Right Armed Batsman/Keeper",
                     "\t\tJuice WRLD Enthusiast " , R.drawable.rishi),
             new CricketPlayer("Sai Mihir Kovour", "Right Armed Batsman",
                     "\t\tJustin Fields Enthusiast " , R.drawable.sai),
-            new CricketPlayer("Praneet Popuri", "Right Armed Spinner",
-                    "\t\tBest Bowler To Get It Poppin'" , R.drawable.praneet),
+            new CricketPlayer("Kuldeep Debnath", "Right Armed Pacer",
+                    "\t\tI AM BETTER THAN AASHMAN" , R.drawable.kuldeep),
             new CricketPlayer("Aashman Sharma", "Right Armed Batsman",
                     "\t\tBest Code Sensei" , R.drawable.aashmanjpg),
             new CricketPlayer("Richard Poruthoor", "Left Armed Batsman",
                     "\t\tVarsity Water Polo Player" , R.drawable.richard),
             new CricketPlayer("Devin Patel", "Right Armed Batsman",
                     "\t\tVarsity Golfer" , R.drawable.devin),
-            new CricketPlayer("Kuldeep Debnath", "Right Armed Pacer",
-                    "\t\tI AM BETTER THAN AASHMAN" , R.drawable.kuldeep),
+
 
     };
 

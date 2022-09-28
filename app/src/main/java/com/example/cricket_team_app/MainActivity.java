@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else if (position == 1) {
-                    for (CricketPlayer c: CricketPlayer.CRICKET_COACHES) { 		// they chose lunch
+                    for (CricketPlayer c: CricketPlayer.ORDER_LINEUP) { 		// they chose lunch
                         cricketArrayList.add(c);
                     }
                 }
 
                 else if (position == 2) {
-                    for (CricketPlayer c: CricketPlayer.ORDER_LINEUP) { 		// they chose dinner
+                    for (CricketPlayer c: CricketPlayer.CRICKET_COACHES) { 		// they chose dinner
                         cricketArrayList.add(c);
                     }
                 }
