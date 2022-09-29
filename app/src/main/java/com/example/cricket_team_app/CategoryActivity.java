@@ -18,31 +18,17 @@ public class CategoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_category);
 
         Intent intent = getIntent();
-        // Gets the particular ArrayList that was passed in of the specific type.
-        // In this case, of type Food.
+
         ArrayList<CricketPlayer> dataToDisplay = intent.getParcelableArrayListExtra(MainActivity.ARRAYLIST_VALUES);
 
-        // The ArrayAdapter is what will take the data from the ArrayList and feed it to the ListView
-        // You can create your own XML layout to describe how each row will look. This is the default layout,
-        // calling the toString()
         ArrayAdapter<CricketPlayer> listAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_list_item_1, dataToDisplay);
-        // This finds the listView and then adds the adapter to bind the data to this view
+
+        CricketAdapter cricketAdapter = new CricketAdapter(this, dataToDisplay);
+
         ListView listView = (ListView) findViewById(R.id.categoryOptions);
-        listView.setAdapter(listAdapter);
 
-        // Create listener to listen for when a Food from the specific Category list is clicked on
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Creates an intent to go from the Specific Category to the specific Detail
-                Intent intent = new Intent(CategoryActivity.this, DetailActivity.class);
-                // Sends the specific object at index i to the Detail activity
-                // In this case, it is sending the particular Food object
-                intent.putExtra(DETAIL_CHOICE, dataToDisplay.get(position));
+        listView.setAdapter(cricketAdapter);
 
-                startActivity(intent);
-            }
-        });
     }
 }
